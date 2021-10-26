@@ -1,0 +1,5 @@
+Padrão de questões 
+
+1- criar pasta referente a questão, ex:
+Primeiro quesito
+dentro dela organize da maneira que preferir.
