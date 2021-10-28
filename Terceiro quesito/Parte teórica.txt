@@ -1,0 +1,13 @@
+Diferenças ->
+Pilhas é uma estrutura de dados LIFO (último a entrar, primeiro a sair).
+Fila é uma estrutura de dados FIFO (primeiro a entrar, primeiro a sair).
+Lista é dinâmica, não segue uma ordenação.
+
+Aplicação computacional ->
+Listas:
+As mais diversas, como manipulação de dados, controle de registros, tamanho da lista significa o número de elementos presentes na lista. Listas encadeadas tem a vantagem de ter um tamanho variável, novos itens podem ser adicionados, o que aumentando seu tamanho.
+Cada elemento numa lista possui um índice, um número que identifica cada elemento da lista. Usando o índice de um elemento da lista é possível buscá-lo ou removê-lo.
+Fila:
+Para ordenação de dados, controle de chegada, dentre outros. Fila são estruturas de dados bastante utilizadas na computação, onde o primeiro elemento a ser inserido, será também o primeiro a ser retirado. Desta forma, serão adicionados elementos no fim e removê-los pelo início.
+Pilhas:
+o último que entra é o primeiro que sai" caracterizando um empilhamento de dados. Por exemplo o Ctrl + Z do computador, utiliza de pilhas para remover a ultima alteração feita, e com isso voltar seu texto no editor, por exemplo. Ela é amplamente usada na arquitetura de sistemas de computação.
