@@ -7,7 +7,7 @@
 
 
 <h3>Organização</h3>
-<p>Questões teóricas estão no documento word, as praticas estão nas respectivas pastas.
+<p>Questões teóricas estão no documento word abaixo, as praticas estão nas respectivas pastas.
 https://docs.google.com/document/d/1yD3pu9cRA_zMotTwjFkAomjwB-3JZGSZGzg6TiBAF-g/edit?usp=sharing</p>
 
 
