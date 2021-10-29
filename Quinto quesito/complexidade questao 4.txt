@@ -1,0 +1,73 @@
+Em funcoes.py - 4ª questão
+
+def busca(lista, valor):
+    corrente = lista.cabeca                      O(1)
+    while corrente and corrente.dado != valor:   O(n)
+        corrente = corrente.proximo              nO(1)
+    return corrente                              O(1)
+
+2n + 2
+O(n)
+
+def remove(self, valor):
+    assert self.cabeca, "Impossível remover valor de lista vazia."   O(1)
+
+    # Nodo a ser removido é a cabeça da lista.
+    if self.cabeca.dado == valor:                                    O(1)                     
+        self.cabeca = self.cabeca.proximo                            O(1)
+    else:                                                            O(1)
+        # Encontra a posição do elemento a ser removido.
+        anterior = None                                              O(1)
+        corrente = self.cabeca                                       O(1)
+        while corrente and corrente.dado != valor:                   O(n)
+            anterior = corrente                                      nO(1)
+            corrente = corrente.proximo                              nO(1)
+        # O nodo corrente é o nodo a ser removido.
+        if corrente:                                                 O(1)
+            anterior.proximo = corrente.proximo                      O(1)
+        else:                                                        O(1)
+            # O nodo corrente é a cauda da lista.                 
+            anterior.proximo = None                                  O(1)
+
+3n + 10
+O(n)
+
+
+---------------------------------------------------------------------------------
+
+Em main.py - 4ª questão
+
+listando = ListaEncadeada()         O(1)
+for i in range(5):                  O(n)
+    insere_no_inicio(listando, i)   nO(1)
+print("Lista:", listando)           O(1)
+
+2n + 2
+O(n)
+
+
+print("Removendo elementos:")                                   O(1)
+for i in range(5):                                              O(n)
+    remove(listando, i)                                         nO(1)
+    print("Removendo o elemento {0}: {1}".format(i, listando))  nO(1)
+
+3n + 1
+O(n)
+
+
+#c)Busca por um dado elemento da lista
+lista_encadeada = ListaEncadeada()                              O(1)
+for i in range(8):                                              O(n)
+    insere_no_inicio(lista_encadeada, i)                        nO(1)
+print("Lista:", lista_encadeada)                                O(1)
+
+for i in range(8, -4, -2):                                      O(n)
+    elemento = busca(lista_encadeada, i)                        nO(1)
+    if elemento:                                                nO(1)
+        print("Elemento {0} presente na lista!".format(i))      nO(1)
+    else:                                                       nO(1)
+        print("Elemento {0} não encontrado.".format(i))         nO(1)
+
+8n + 2
+O(n)
+

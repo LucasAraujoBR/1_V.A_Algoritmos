@@ -1,0 +1,128 @@
+Em pilha.py - 3ª questão
+
+#Buscar
+def buscar(pilha,elemento):
+    for x in range(size(pilha)):      O(n)
+        if(pilha[x] == elemento):     nO(1)
+            return x                  nO(1)
+    return None                       O(1)
+
+N + N + N + 1 = 3N + 1 (Tempo de Execução Pior Caso)
+O(n)
+
+
+#inserindo elementos na pilha
+for i in range(0,len(s),1):                      O(n)
+    push(p,s[i])                                 nO(1)
+print(f'total de elementos na pilha = {p}\n')    O(1)
+
+N + N + 1 = 2N + 1 (Tempo de Execução Pior Caso)
+O(n)
+
+
+#removendo elemento da pilha  
+for i in range(0,len(s),1):                      O(n)
+    print(f'removido:{pop(p)}', end="\n")        nO(1)
+print(f'\ntotal de elementos na pilha = {p}')    O(1)
+
+N + N + 1 = 2N + 1 (Tempo de Execução Pior Caso)
+O(n)
+
+-------------------------------------------------------------
+
+Em lista.py - 3ª Questão
+
+#Inserir
+lista.append('Inserindo valor no final da lista')   O(1) 
+lista.insert(0,'inserindo no começo da lista')      O(1)
+print(lista)                                        O(1)
+
+1 + 1 + 1 = 2
+O(1)
+
+#Remover
+del(lista[0])    O(1)
+del(lista[3])    O(1)
+print(lista)     O(1)
+
+1 + 1 + 1 = 2
+O(1)
+
+#Buscar
+def busca(lista,elemento):          O(1)
+    for x in range(len(lista)):     O(n)
+        if(lista[x] == elemento):   nO(1)
+            return x                nO(1)
+    return None                     O(1)
+
+1 + N + N + N + 1 = 3N+1
+O(n)
+
+-------------------------------------------------------------
+
+Em fila.py - 3ª Questão
+
+#Buscar elemento na fila
+def buscar(self,elemento):     O(1)
+    a = self.primeiro.dado     O(1)
+    print(a)                   O(1)
+    if(a == elemento):         O(1)
+        return True            O(1)
+    else:                      O(1)
+        self.primeiro = self.primeiro.proximo
+        return False
+
+O(1)
+    
+
+# Cria uma fila vazia.
+fila = Fila()                                                        O(1)
+print("Fila vazia: ", fila)                                          O(1)
+elemento = 1                                                         O(1)
+aux = False                                                          O(1)
+
+O(1)
+
+
+# Insere elementos na fila.                      
+for i in range(5):                                                    O(n)
+    insere(fila,i)                                                    nO(1)
+    print("Insere o valor {0} final da fila: {1}".format(i, fila))    nO(1)
+
+n + n + n = 3n
+O(n)
+
+#Busca elementos na fila
+for i in range(5):                              O(n)
+    if(buscar(fila,elemento) == True):          nO(1)
+        print(f'{elemento} está na fila.')      nO(1)
+        aux = True                              nO(1)
+        break                                   nO(1)
+    else:                                       nO(1)
+        print('Checando...')                    nO(1)
+if(aux == False):                               O(1)
+    print(f'{elemento} não está na fila.')      O(1)
+
+5n + 2
+O(n)
+
+
+# Remove elementos da fila
+while fila.primeiro != None:                                           O(n)
+    remove(fila)                                                       nO(1)
+    print("Removendo elemento que está no começo da fila: ", fila)     nO(1)
+
+3n+1
+O(n)
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
