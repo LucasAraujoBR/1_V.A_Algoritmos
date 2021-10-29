@@ -2,7 +2,7 @@
 <h3>Grupo:</h3>
 <p>Lucas Edson Silva de Araújo</p>
 <p>Lucas Henrique Gonzaga de Sales</p>
-<p>Lucas Lins</p>
+<p>Lucas Lins Pereira da Silva</p>
 
 
 
