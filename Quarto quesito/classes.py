@@ -5,7 +5,10 @@ class NodoLista:
         self.proximo = proximo_nodo
 
     def __repr__(self):
-        return '%s -> %s' % (self.dado, self.proximo)
+        
+            return '%s' '-> %s' % (self.dado, self.proximo)
+
+       
 
 class ListaEncadeada:
     """Esta classe representa uma lista encadeada."""
