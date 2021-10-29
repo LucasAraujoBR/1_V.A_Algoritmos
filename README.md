@@ -1,17 +1,13 @@
 <h1>Primeira V.A de Algoritmos</h1>
 <h3>Grupo:</h3>
 <p>Lucas Edson Silva de Araújo</p>
-<p>Membro 2</p>
+<p>Lucas Henrique Gonzaga de Sales</p>
 <p>Membro 3</p>
 
 
 
-<h3>QUESTÕES</h3>
-<p>1-</p>
-<p>2-</p>
-<p>3-</p>
-<p>4-</p>
-<p>5-</p>
-<p>6-</p>
+<h3>Organização</h3>
+<p>Questões teóricas estão no documento word, as praticas estão nas respectivas pastas.</p>
+
 
 
