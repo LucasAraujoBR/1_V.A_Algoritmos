@@ -21,6 +21,7 @@ insere_no_inicio(lista, 25)
 print("Inserindo um novo elemento:", lista)
 # B)Remoção de um dado valor da lista
 
+
 listando = ListaEncadeada()
 for i in range(5):
     insere_no_inicio(listando, i)
@@ -30,6 +31,7 @@ print("Removendo elementos:")
 for i in range(5):
     remove(listando, i)
     print("Removendo o elemento {0}: {1}".format(i, listando))
+
 
 # c)Busca por um dado elemento da lista
 lista_encadeada = ListaEncadeada()
@@ -60,3 +62,5 @@ imprimeInicio(lista1)
 # E)Impressão da lista do fim para o início
 print("-------------------------------------")
 imprimeFim(lista1)
+
+imprimeFim(lista)
