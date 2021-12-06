@@ -1,3 +1,13 @@
+""" 
+
+**Parte teorica**
+
+Um grafo é uma rede de vértices que são conectados dois a dois por arestas ou arcos
+podendo ser direcionado ou não direcionado, sendo o grafo direcionado aquele que leva
+em consideração o sentido (ou direção) da aresta ou arco para a construção da relação de conexão entre
+os vértices e o não direcionado une ambos os vértices com uma unica aresta sem direção.
+
+ """
 class graph:
 
     def __init__(self, vertices):

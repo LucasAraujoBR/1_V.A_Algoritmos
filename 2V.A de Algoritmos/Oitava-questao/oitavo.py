@@ -1,3 +1,13 @@
+""" 
+
+**Parte teorica**
+
+O algoritmo de dijkstra é um algoritmo que busca menores caminhos 
+entre dois vértices desde que exista um caminho possível do vertice de origem.
+é muito utilizado nos aplicativos de GPS para buscar o menor caminho entre dois pontos,
+ele funciona com uma construção focada em cada escolha tendo o final mais benéfico possivel.
+
+ """
 import sys
 
 
@@ -5,56 +15,53 @@ class Graph():
 
     def __init__(self, vertx):
         self.V = vertx
-        self.graph = [[0 for column in range(vertx)]
-                      for row in range(vertx)]
+        self.graph = [[0 for coluna in range(vertx)]
+                      for linha in range(vertx)]
 
-    def pSol(self, dist):
-        print("Distance of vertex from source")
-        for node in range(self.V):
-            print(node, "t", dist[node])
-
-    def minDistance(self, dist, sptSet):
+    def minDistancia(self, dist, ind_dis):
 
         min = sys.maxsize
 
         for v in range(self.V):
-            if dist[v] < min and sptSet[v] == False:
+            if dist[v] < min and ind_dis[v] == False:
                 min = dist[v]
                 min_index = v
 
         return min_index
 
-    def dijk(self, source):
+    def nos(self, dist):
+        print("Distancia")
+        for indice in range(self.V):
+            print(indice, "->", dist[indice])
+
+    def dijkstra(self, source):
 
         dist = [sys.maxsize] * self.V
         dist[source] = 0
-        sptSet = [False] * self.V
+        ind_dis = [False] * self.V
 
-        for cout in range(self.V):
+        for x in range(self.V):
 
-            u = self.minDistance(dist, sptSet)
+            u = self.minDistancia(dist, ind_dis)
 
-            sptSet[u] = True
+            ind_dis[u] = True
 
             for v in range(self.V):
                 if self.graph[u][v] > 0:
-                    if sptSet[v] == False:
+                    if ind_dis[v] == False:
                         if dist[v] > dist[u] + self.graph[u][v]:
                             dist[v] = dist[u] + self.graph[u][v]
 
-        self.pSol(dist)
+        self.nos(dist)
 
 
-f = Graph(9)
-f.graph = [[0, 4, 0, 0, 0, 0, 0, 8, 0],
-           [4, 0, 8, 0, 0, 0, 0, 11, 0],
-           [0, 8, 0, 7, 0, 4, 0, 0, 2],
-           [0, 0, 7, 0, 9, 14, 0, 0, 0],
-           [0, 0, 0, 9, 0, 10, 0, 0, 0],
-           [0, 0, 4, 14, 10, 0, 2, 0, 0],
-           [0, 0, 0, 0, 0, 2, 0, 1, 6],
-           [8, 11, 0, 0, 0, 0, 1, 0, 7],
-           [0, 0, 2, 0, 0, 0, 6, 7, 0]
-           ]
+# pesos são iguais ao numero do maior vertice do par e a origem o vértice 1
+f = Graph(6)
+f.graph = [[0, 2, 0, 0, 5, 0],
+           [2, 0, 3, 0, 5, 0],
+           [0, 3, 0, 4, 0, 0],
+           [0, 0, 4, 0, 5, 6],
+           [5, 5, 0, 5, 0, 0],
+           [0, 0, 0, 6, 0, 0]]
 
-f.dijk(0)
+f.dijkstra(0)
